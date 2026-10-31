@@ -367,7 +367,6 @@ header.scrolled { border-bottom-color: rgb(200 62 126 / .2); box-shadow: 0 10px 
 
 <main>
   <section class="hero" id="top">
-    <div class="hero-bg" id="heroBg"></div>
     <div class="wrap">
       <div class="badge"><span class="dot"></span>Золотая Фортуна ∞ · украшения ручной работы</div>
       <h1>Стильные авторские украшения <span class="g">из натуральных камней</span></h1>
@@ -634,11 +633,6 @@ header.scrolled { border-bottom-color: rgb(200 62 126 / .2); box-shadow: 0 10px 
 
 <script>
 (function () {
-  var heroBg = document.getElementById('heroBg');
-  if (heroBg) {
-    heroBg.style.backgroundImage = 'url(' + document.getElementById('img1').src + ')';
-  }
-
   var cursorGlow = document.getElementById('cursorGlow');
   if (cursorGlow) {
     var gx = 0, gy = 0, cx = 0, cy = 0;
