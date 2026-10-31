@@ -121,6 +121,13 @@ header .btn { padding: 10px 18px; font-size: 13px; border-radius: 10px; }
 .sec-head p { margin: 8px 0 0; color: var(--text); max-width: 44ch; font-size: 15px; }
 @media (max-width: 700px) { .sec-head { flex-direction: column; align-items: start; } }
 
+.stones { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.stone { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; position: relative; transition: box-shadow .3s; }
+.stone:hover { box-shadow: 0 0 0 1px rgb(93 197 219 / .25), 0 24px 60px rgb(93 197 219 / .14); }
+.stone .stone-name { font: 800 18px var(--f); color: var(--lime); margin-bottom: 10px; }
+.stone p { margin: 0; font-size: 14px; line-height: 1.5; }
+.stone p + p { margin-top: 8px; }
+
 .reasons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 @media (max-width: 960px) { .reasons { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .reasons { grid-template-columns: 1fr; } }
@@ -403,6 +410,26 @@ header.scrolled { border-bottom-color: rgb(93 197 219 / .35); box-shadow: 0 10px
         <div class="reason rv"><div class="n">02</div><h3>Живые камни</h3><p>Найдите свой личный талисман среди готовых изделий в единственном экземпляре.</p></div>
         <div class="reason rv"><div class="n">03</div><h3>Энергия природы в каждом кристалле</h3><p>Натуральные камни с характерным рисунком и переливами — в вашем украшении.</p></div>
         <div class="reason rv"><div class="n">04</div><h3>Больше чем украшения</h3><p>Ваш личный оберег из натуральных камней, который заберёте с собой.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stones">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="num">02 — Камни и их свойства</div>
+          <h2>Сила натуральных камней</h2>
+          <p>Что говорят о свойствах камней — ищите свой камень-талисман.</p>
+        </div>
+      </div>
+      <div class="stones">
+        <div class="stone rv"><div class="stone-name">Малахит</div><p>Благородный и очень эффектный камень: исполняет желания и привлекает финансовые потоки.</p><p>Избавляет от негативной энергетики и защищает от нечестных людей.</p></div>
+        <div class="stone rv"><div class="stone-name">Тигровый глаз</div><p>Оберег для публичных мероприятий и важных встреч: камень может предупреждать об опасности, улучшает интуицию.</p><p>Придаёт владельцу смелость, собранность и уверенность.</p></div>
+        <div class="stone rv"><div class="stone-name">Аметист</div><p>Кварцевый минерал фиолетового цвета, полудрагоценный кристалл. Приносит успех в бизнесе, спорте и любви.</p><p>Помогает при стрессе, депрессии, бессоннице; дарит вдохновение и новые идеи.</p></div>
+        <div class="stone rv"><div class="stone-name">Бирюза</div><p>Камень любви и миротворец: гасит ссоры, укрепляет доверие в семье, приносит душевное спокойствие.</p><p>Защищает от дурного глаза, сглаза и негативного влияния.</p></div>
+        <div class="stone rv"><div class="stone-name">Рубин</div><p>Обладает целительными свойствами: нормализует работу сердца, улучшает состояние крови и сон.</p><p>Притягивает взаимную любовь, придаёт владельцу силу и храбрость.</p></div>
+        <div class="stone rv"><div class="stone-name">Аквамарин</div><p>Голубой камень делает человека уравновешеннее, дарит спокойствие и помогает спокойно относиться к стрессу.</p><p>Покровительствует тем, кто много общается с людьми: учителям, лекторам, артистам.</p></div>
       </div>
     </div>
   </section>
